@@ -1,8 +1,10 @@
 package pe.edu.upeu.sysalmacen.repositorio;
 
+
 import org.junit.jupiter.api.*;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabase;
+import
+        org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabase;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 import org.springframework.test.annotation.Rollback;
 import org.springframework.test.context.ActiveProfiles;
@@ -75,4 +77,7 @@ public class IMarcaRepositoryTest {
         Optional<Marca> eliminada = marcaRepository.findById(marcaId);
         assertFalse(eliminada.isPresent(), "La marca debería haber sido eliminada");
     }
+
+
+
 }
